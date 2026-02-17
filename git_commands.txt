@@ -1,0 +1,16 @@
+ 1014  cd ..
+ 1015  cd..
+ 1016  pwd
+ 1017  git status\n
+ 1018  git add "Assignment 1"\n
+ 1019  git status\n
+ 1020  git restore --staged .\n
+ 1021  git status\n
+ 1022  git rm -r --cached .\n
+ 1023  git status\n
+ 1024  git add "Assignment 1/question1.c"\ngit status\n
+ 1025  cat > .gitignore << 'EOF'\n# compiled outputs\nquestion1\noutput/\n*.dSYM/\nEOF\n
+ 1026  git add .gitignore\ngit status\n
+ 1027  git commit -m "Add Assignment 1 Question 1 solution"\n
+ 1028  git push -u origin main\n
+ 1029  cd ~/Documents/CSC362/Assignments
